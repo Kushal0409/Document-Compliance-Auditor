@@ -1,0 +1,23 @@
+google-genai>=0.6.0
+python-dotenv>=1.0.0
+gradio>=5.0.0
+python-docx>=1.0.0
+pypdf>=5.0.0
+langchain>=0.1.0
+langchain-google-genai>=1.0.0
+langchain-core>=0.1.0
+langchain-community>=0.0.20
+langchain-text-splitters>=0.0.1
+langchain-chroma>=0.1.0
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+protobuf>=5.26.1,<6.0.0
+# Note: If you have tensorflow-intel installed, it will show a conflict warning.
+# This is safe to ignore - the compliance auditor doesn't require TensorFlow.
+# To remove the warning: pip uninstall tensorflow-intel
+
+# IMPORTANT: Do NOT install 'docx' package - it conflicts with python-docx
+# If you see "ModuleNotFoundError: No module named 'exceptions'" error:
+#   pip uninstall docx
+#   pip install python-docx
